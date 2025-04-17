@@ -1,8 +1,10 @@
 """
-    This script is used to train and evaluate three different machine learning models 
+    This script is used to train and evaluate three different machine learning models
     (Decision Tree, Random Forest, and Support Vector Machine) on an accident dataset.
+    It now includes functionality to run the training and evaluation multiple times
+    with random subsampling of the data and reports the average metrics.
 """
-import pandas as pd  
+import pandas as pd
 import numpy as np
 import logging
 from sklearn.model_selection import train_test_split
@@ -15,7 +17,7 @@ from sklearn.metrics import confusion_matrix
 logging.basicConfig(filename="log.txt", level=logging.INFO, encoding="utf-8", format="%(asctime)s - %(message)s")
 
 # Read Excel data
-file_path = "new-gpt.xlsx"  
+file_path = "new-ds.xlsx"
 df = pd.read_excel(file_path)
 
 # Handling accident factors: Split the `factor` column into individual feature columns
@@ -29,10 +31,9 @@ factor_matrix = df["factor"].apply(process_factors).apply(pd.Series)
 # Combine the processed feature matrix with the label
 data = pd.concat([factor_matrix, df["label"]], axis=1)
 
-# Split into training and testing sets
-X = data[factors]  # Features
-y = data["label"]  # Target variable
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.5, random_state=42, stratify=y)
+# Define the number of runs and the proportion of data to sample
+num_runs = 10  # Number of times to run the experiment
+sample_proportion = 0.5  # Proportion of the data to randomly sample in each run
 
 # Calculate metrics: overall calculation based on TP/TN/FP/FN
 def calc_metrics_from_confusion(y_true, y_pred):
@@ -47,48 +48,107 @@ def calc_metrics_from_confusion(y_true, y_pred):
 
     return accuracy, precision, recall, f1, TP, TN, FP, FN
 
-# Model training and evaluation (only report overall metrics)
-def train_and_evaluate(model, model_name, threshold=0.5):
-    model.fit(X_train, y_train)
+# Model training and evaluation with random sampling
+def train_and_evaluate_with_sampling(model, model_name, n_runs, sample_size_proportion, threshold=0.5):
+    all_accuracy = []
+    all_precision = []
+    all_recall = []
+    all_f1 = []
+    all_tp = []
+    all_tn = []
+    all_fp = []
+    all_fn = []
 
-    # Get prediction probabilities
-    if hasattr(model, "predict_proba"):
-        y_proba = model.predict_proba(X_test)[:, 1]
-    else:
-        y_proba = model.decision_function(X_test)
-        y_proba = (y_proba - y_proba.min()) / (y_proba.max() - y_proba.min())
+    for i in range(n_runs):
+        print(f"\n--- Running {model_name} - Run {i+1} ---")
+        logging.info(f"--- Running {model_name} - Run {i+1} ---")
 
-    y_pred = (y_proba >= threshold).astype(int)
+        # Randomly sample the data
+        sampled_data = data.sample(frac=sample_size_proportion, random_state=39 + i)
 
-    # Calculate metrics
-    accuracy, precision, recall, f1, TP, TN, FP, FN = calc_metrics_from_confusion(y_test, y_pred)
+        # Split into training and testing sets
+        X_sampled = sampled_data[factors]  # Features
+        y_sampled = sampled_data["label"]  # Target variable
+        X_train_sampled, X_test_sampled, y_train_sampled, y_test_sampled = train_test_split(
+            X_sampled, y_sampled, test_size=0.4, random_state=39 + i, stratify=y_sampled
+        )
 
-    # Log output
-    log_info = f"""
-        Model: {model_name} (Threshold: {threshold})
-        ---------------------------------
-        Confusion Matrix:
-        - TP: {TP}, TN: {TN}, FP: {FP}, FN: {FN}
+        model.fit(X_train_sampled, y_train_sampled)
 
-        Statistical Metrics (based on overall sample):
-        - Accuracy: {accuracy:.4f}
-        - Precision: {precision:.4f}
-        - Recall: {recall:.4f}
-        - F1 Score: {f1:.4f}
-        ---------------------------------
-        """
-    print(log_info)
-    logging.info(log_info)
+        # Get prediction probabilities
+        if hasattr(model, "predict_proba"):
+            y_proba = model.predict_proba(X_test_sampled)[:, 1]
+        else:
+            y_proba = model.decision_function(X_test_sampled)
+            y_proba = (y_proba - y_proba.min()) / (y_proba.max() - y_proba.min())
 
-# Run three classification models
-train_and_evaluate(
-    DecisionTreeClassifier(random_state=42, max_depth=10, min_samples_leaf=5, min_samples_split=5),
-    "Decision Tree", threshold=0.5)
+        y_pred = (y_proba >= threshold).astype(int)
 
-train_and_evaluate(
-    RandomForestClassifier(class_weight="balanced", n_estimators=500, max_depth=10, random_state=42),
-    "Random Forest", threshold=0.5)
+        # Calculate metrics for this run
+        accuracy, precision, recall, f1, TP, TN, FP, FN = calc_metrics_from_confusion(y_test_sampled, y_pred)
 
-train_and_evaluate(
-    SVC(class_weight="balanced", probability=True, random_state=42),
-    "Support Vector Machine", threshold=0.5)
+        # Append metrics for averaging
+        all_accuracy.append(accuracy)
+        all_precision.append(precision)
+        all_recall.append(recall)
+        all_f1.append(f1)
+        all_tp.append(TP)
+        all_tn.append(TN)
+        all_fp.append(FP)
+        all_fn.append(FN)
+
+        # Log output for this run
+        log_info = f"""
+            Model: {model_name} (Run {i+1}, Threshold: {threshold})
+            ---------------------------------
+            Confusion Matrix:
+            - TP: {TP}, TN: {TN}, FP: {FP}, FN: {FN}
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: {accuracy:.4f}
+            - Precision: {precision:.4f}
+            - Recall: {recall:.4f}
+            - F1 Score: {f1:.4f}
+            ---------------------------------
+            """
+        print(log_info)
+        logging.info(log_info)
+
+    # Calculate and report average metrics
+    avg_accuracy = np.mean(all_accuracy)
+    avg_precision = np.mean(all_precision)
+    avg_recall = np.mean(all_recall)
+    avg_f1 = np.mean(all_f1)
+    avg_tp = np.mean(all_tp)
+    avg_tn = np.mean(all_tn)
+    avg_fp = np.mean(all_fp)
+    avg_fn = np.mean(all_fn)
+
+    avg_log_info = f"""
+    --- {model_name} - Average Metrics over {n_runs} runs (Sample Proportion: {sample_size_proportion:.2f}) ---
+    ----------------------------------------------------------------------------------------------------
+    Average Confusion Matrix:
+    - TP: {avg_tp:.2f}, TN: {avg_tn:.2f}, FP: {avg_fp:.2f}, FN: {avg_fn:.2f}
+
+    Average Statistical Metrics:
+    - Accuracy: {avg_accuracy:.4f}
+    - Precision: {avg_precision:.4f}
+    - Recall: {avg_recall:.4f}
+    - F1 Score: {avg_f1:.4f}
+    ----------------------------------------------------------------------------------------------------
+    """
+    print(avg_log_info)
+    logging.info(avg_log_info)
+
+# Run three classification models with multiple runs and random sampling
+train_and_evaluate_with_sampling(
+    DecisionTreeClassifier(random_state=39, max_depth=10, min_samples_leaf=5, min_samples_split=5),
+    "Decision Tree", num_runs, sample_proportion, threshold=0.5)
+
+train_and_evaluate_with_sampling(
+    RandomForestClassifier(class_weight="balanced", n_estimators=500, max_depth=10, random_state=39),
+    "Random Forest", num_runs, sample_proportion, threshold=0.5)
+
+train_and_evaluate_with_sampling(
+    SVC(class_weight="balanced", probability=True, random_state=39),
+    "Support Vector Machine", num_runs, sample_proportion, threshold=0.5)

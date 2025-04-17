@@ -1,0 +1,918 @@
+2025-04-14 19:32:28,716 - --- Running Decision Tree - Run 1 ---
+2025-04-14 19:32:28,726 - 
+            Model: Decision Tree (Run 1, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 3, FP: 1, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.6667
+            - Recall: 0.5000
+            - F1 Score: 0.5714
+            ---------------------------------
+            
+2025-04-14 19:32:28,727 - --- Running Decision Tree - Run 2 ---
+2025-04-14 19:32:28,736 - 
+            Model: Decision Tree (Run 2, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 1, FP: 3, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.5714
+            - Recall: 1.0000
+            - F1 Score: 0.7273
+            ---------------------------------
+            
+2025-04-14 19:32:28,736 - --- Running Decision Tree - Run 3 ---
+2025-04-14 19:32:28,746 - 
+            Model: Decision Tree (Run 3, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 0, TN: 2, FP: 2, FN: 4
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.2500
+            - Precision: 0.0000
+            - Recall: 0.0000
+            - F1 Score: 0.0000
+            ---------------------------------
+            
+2025-04-14 19:32:28,747 - --- Running Decision Tree - Run 4 ---
+2025-04-14 19:32:28,757 - 
+            Model: Decision Tree (Run 4, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 1, FP: 3, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.3750
+            - Precision: 0.4000
+            - Recall: 0.5000
+            - F1 Score: 0.4444
+            ---------------------------------
+            
+2025-04-14 19:32:28,758 - --- Running Decision Tree - Run 5 ---
+2025-04-14 19:32:28,767 - 
+            Model: Decision Tree (Run 5, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 2, FP: 2, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.5000
+            - Precision: 0.5000
+            - Recall: 0.5000
+            - F1 Score: 0.5000
+            ---------------------------------
+            
+2025-04-14 19:32:28,768 - --- Running Decision Tree - Run 6 ---
+2025-04-14 19:32:28,777 - 
+            Model: Decision Tree (Run 6, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 2, FP: 1, FN: 3
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.5000
+            - Precision: 0.6667
+            - Recall: 0.4000
+            - F1 Score: 0.5000
+            ---------------------------------
+            
+2025-04-14 19:32:28,777 - --- Running Decision Tree - Run 7 ---
+2025-04-14 19:32:28,794 - 
+            Model: Decision Tree (Run 7, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 0, FP: 4, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.3750
+            - Precision: 0.4286
+            - Recall: 0.7500
+            - F1 Score: 0.5455
+            ---------------------------------
+            
+2025-04-14 19:32:28,794 - --- Running Decision Tree - Run 8 ---
+2025-04-14 19:32:28,816 - 
+            Model: Decision Tree (Run 8, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 2, FP: 2, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.6000
+            - Recall: 0.7500
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:28,817 - --- Running Decision Tree - Run 9 ---
+2025-04-14 19:32:28,833 - 
+            Model: Decision Tree (Run 9, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 4, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.5000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:28,834 - --- Running Decision Tree - Run 10 ---
+2025-04-14 19:32:28,846 - 
+            Model: Decision Tree (Run 10, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 4, FP: 1, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 0.6667
+            - Recall: 0.6667
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:28,849 - 
+    --- Decision Tree - Average Metrics over 10 runs (Sample Proportion: 0.50) ---
+    ----------------------------------------------------------------------------------------------------
+    Average Confusion Matrix:
+    - TP: 2.20, TN: 2.10, FP: 1.90, FN: 1.80
+
+    Average Statistical Metrics:
+    - Accuracy: 0.5375
+    - Precision: 0.5500
+    - Recall: 0.5567
+    - F1 Score: 0.5289
+    ----------------------------------------------------------------------------------------------------
+    
+2025-04-14 19:32:28,849 - --- Running Random Forest - Run 1 ---
+2025-04-14 19:32:29,560 - 
+            Model: Random Forest (Run 1, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 3, FP: 1, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.6667
+            - Recall: 0.5000
+            - F1 Score: 0.5714
+            ---------------------------------
+            
+2025-04-14 19:32:29,561 - --- Running Random Forest - Run 2 ---
+2025-04-14 19:32:30,272 - 
+            Model: Random Forest (Run 2, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 2, FP: 2, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.6000
+            - Recall: 0.7500
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:30,272 - --- Running Random Forest - Run 3 ---
+2025-04-14 19:32:30,964 - 
+            Model: Random Forest (Run 3, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 3, FP: 1, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.6667
+            - Recall: 0.5000
+            - F1 Score: 0.5714
+            ---------------------------------
+            
+2025-04-14 19:32:30,964 - --- Running Random Forest - Run 4 ---
+2025-04-14 19:32:31,645 - 
+            Model: Random Forest (Run 4, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 4, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.5000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:31,646 - --- Running Random Forest - Run 5 ---
+2025-04-14 19:32:32,299 - 
+            Model: Random Forest (Run 5, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:32:32,299 - --- Running Random Forest - Run 6 ---
+2025-04-14 19:32:32,996 - 
+            Model: Random Forest (Run 6, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 3, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.6000
+            - F1 Score: 0.7500
+            ---------------------------------
+            
+2025-04-14 19:32:32,996 - --- Running Random Forest - Run 7 ---
+2025-04-14 19:32:33,614 - 
+            Model: Random Forest (Run 7, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 4, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.5000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:33,614 - --- Running Random Forest - Run 8 ---
+2025-04-14 19:32:34,268 - 
+            Model: Random Forest (Run 8, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:32:34,269 - --- Running Random Forest - Run 9 ---
+2025-04-14 19:32:34,895 - 
+            Model: Random Forest (Run 9, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 1, TN: 4, FP: 0, FN: 3
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 1.0000
+            - Recall: 0.2500
+            - F1 Score: 0.4000
+            ---------------------------------
+            
+2025-04-14 19:32:34,895 - --- Running Random Forest - Run 10 ---
+2025-04-14 19:32:35,544 - 
+            Model: Random Forest (Run 10, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 1, TN: 5, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.3333
+            - F1 Score: 0.5000
+            ---------------------------------
+            
+2025-04-14 19:32:35,546 - 
+    --- Random Forest - Average Metrics over 10 runs (Sample Proportion: 0.50) ---
+    ----------------------------------------------------------------------------------------------------
+    Average Confusion Matrix:
+    - TP: 2.20, TN: 3.60, FP: 0.40, FN: 1.80
+
+    Average Statistical Metrics:
+    - Accuracy: 0.7250
+    - Precision: 0.8933
+    - Recall: 0.5433
+    - F1 Score: 0.6507
+    ----------------------------------------------------------------------------------------------------
+    
+2025-04-14 19:32:35,547 - --- Running Support Vector Machine - Run 1 ---
+2025-04-14 19:32:35,555 - 
+            Model: Support Vector Machine (Run 1, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 0, FP: 4, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.5000
+            - Precision: 0.5000
+            - Recall: 1.0000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:35,556 - --- Running Support Vector Machine - Run 2 ---
+2025-04-14 19:32:35,565 - 
+            Model: Support Vector Machine (Run 2, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 2, FP: 2, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 0.6667
+            - Recall: 1.0000
+            - F1 Score: 0.8000
+            ---------------------------------
+            
+2025-04-14 19:32:35,566 - --- Running Support Vector Machine - Run 3 ---
+2025-04-14 19:32:35,576 - 
+            Model: Support Vector Machine (Run 3, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 2, FP: 2, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 0.6667
+            - Recall: 1.0000
+            - F1 Score: 0.8000
+            ---------------------------------
+            
+2025-04-14 19:32:35,576 - --- Running Support Vector Machine - Run 4 ---
+2025-04-14 19:32:35,587 - 
+            Model: Support Vector Machine (Run 4, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 0, FP: 4, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.5000
+            - Precision: 0.5000
+            - Recall: 1.0000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:35,587 - --- Running Support Vector Machine - Run 5 ---
+2025-04-14 19:32:35,598 - 
+            Model: Support Vector Machine (Run 5, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 3, FP: 1, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 0.8000
+            - Recall: 1.0000
+            - F1 Score: 0.8889
+            ---------------------------------
+            
+2025-04-14 19:32:35,598 - --- Running Support Vector Machine - Run 6 ---
+2025-04-14 19:32:35,609 - 
+            Model: Support Vector Machine (Run 6, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 5, TN: 1, FP: 2, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 0.7143
+            - Recall: 1.0000
+            - F1 Score: 0.8333
+            ---------------------------------
+            
+2025-04-14 19:32:35,610 - --- Running Support Vector Machine - Run 7 ---
+2025-04-14 19:32:35,618 - 
+            Model: Support Vector Machine (Run 7, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 2, FP: 2, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.6000
+            - Recall: 0.7500
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:35,619 - --- Running Support Vector Machine - Run 8 ---
+2025-04-14 19:32:35,628 - 
+            Model: Support Vector Machine (Run 8, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 3, FP: 1, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 0.8000
+            - Recall: 1.0000
+            - F1 Score: 0.8889
+            ---------------------------------
+            
+2025-04-14 19:32:35,629 - --- Running Support Vector Machine - Run 9 ---
+2025-04-14 19:32:35,638 - 
+            Model: Support Vector Machine (Run 9, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 4, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.5000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:32:35,638 - --- Running Support Vector Machine - Run 10 ---
+2025-04-14 19:32:35,647 - 
+            Model: Support Vector Machine (Run 10, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 5, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.6667
+            - F1 Score: 0.8000
+            ---------------------------------
+            
+2025-04-14 19:32:35,648 - 
+    --- Support Vector Machine - Average Metrics over 10 runs (Sample Proportion: 0.50) ---
+    ----------------------------------------------------------------------------------------------------
+    Average Confusion Matrix:
+    - TP: 3.60, TN: 2.20, FP: 1.80, FN: 0.40
+
+    Average Statistical Metrics:
+    - Accuracy: 0.7250
+    - Precision: 0.7248
+    - Recall: 0.8917
+    - F1 Score: 0.7678
+    ----------------------------------------------------------------------------------------------------
+    
+2025-04-14 19:50:23,532 - --- Running Decision Tree - Run 1 ---
+2025-04-14 19:50:23,556 - 
+            Model: Decision Tree (Run 1, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:23,556 - --- Running Decision Tree - Run 2 ---
+2025-04-14 19:50:23,566 - 
+            Model: Decision Tree (Run 2, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 1, TN: 4, FP: 0, FN: 3
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 1.0000
+            - Recall: 0.2500
+            - F1 Score: 0.4000
+            ---------------------------------
+            
+2025-04-14 19:50:23,566 - --- Running Decision Tree - Run 3 ---
+2025-04-14 19:50:23,575 - 
+            Model: Decision Tree (Run 3, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 4, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.5000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:50:23,575 - --- Running Decision Tree - Run 4 ---
+2025-04-14 19:50:23,584 - 
+            Model: Decision Tree (Run 4, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 4, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:23,584 - --- Running Decision Tree - Run 5 ---
+2025-04-14 19:50:23,593 - 
+            Model: Decision Tree (Run 5, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:23,593 - --- Running Decision Tree - Run 6 ---
+2025-04-14 19:50:23,601 - 
+            Model: Decision Tree (Run 6, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 3, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.6000
+            - F1 Score: 0.7500
+            ---------------------------------
+            
+2025-04-14 19:50:23,602 - --- Running Decision Tree - Run 7 ---
+2025-04-14 19:50:23,611 - 
+            Model: Decision Tree (Run 7, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 4, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.5000
+            - F1 Score: 0.6667
+            ---------------------------------
+            
+2025-04-14 19:50:23,612 - --- Running Decision Tree - Run 8 ---
+2025-04-14 19:50:23,621 - 
+            Model: Decision Tree (Run 8, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 4, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:23,621 - --- Running Decision Tree - Run 9 ---
+2025-04-14 19:50:23,630 - 
+            Model: Decision Tree (Run 9, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:23,631 - --- Running Decision Tree - Run 10 ---
+2025-04-14 19:50:23,640 - 
+            Model: Decision Tree (Run 10, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 2, TN: 1, FP: 4, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.3750
+            - Precision: 0.3333
+            - Recall: 0.6667
+            - F1 Score: 0.4444
+            ---------------------------------
+            
+2025-04-14 19:50:23,642 - 
+    --- Decision Tree - Average Metrics over 10 runs (Sample Proportion: 0.50) ---
+    ----------------------------------------------------------------------------------------------------
+    Average Confusion Matrix:
+    - TP: 2.70, TN: 3.60, FP: 0.40, FN: 1.30
+
+    Average Statistical Metrics:
+    - Accuracy: 0.7875
+    - Precision: 0.9333
+    - Recall: 0.6767
+    - F1 Score: 0.7499
+    ----------------------------------------------------------------------------------------------------
+    
+2025-04-14 19:50:23,642 - --- Running Random Forest - Run 1 ---
+2025-04-14 19:50:24,312 - 
+            Model: Random Forest (Run 1, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 4, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:24,312 - --- Running Random Forest - Run 2 ---
+2025-04-14 19:50:25,022 - 
+            Model: Random Forest (Run 2, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:25,024 - --- Running Random Forest - Run 3 ---
+2025-04-14 19:50:25,716 - 
+            Model: Random Forest (Run 3, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 3, FP: 1, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 0.7500
+            - Recall: 0.7500
+            - F1 Score: 0.7500
+            ---------------------------------
+            
+2025-04-14 19:50:25,717 - --- Running Random Forest - Run 4 ---
+2025-04-14 19:50:26,365 - 
+            Model: Random Forest (Run 4, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 4, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:26,366 - --- Running Random Forest - Run 5 ---
+2025-04-14 19:50:26,991 - 
+            Model: Random Forest (Run 5, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:26,992 - --- Running Random Forest - Run 6 ---
+2025-04-14 19:50:27,620 - 
+            Model: Random Forest (Run 6, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 5, TN: 2, FP: 1, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 0.8333
+            - Recall: 1.0000
+            - F1 Score: 0.9091
+            ---------------------------------
+            
+2025-04-14 19:50:27,621 - --- Running Random Forest - Run 7 ---
+2025-04-14 19:50:28,263 - 
+            Model: Random Forest (Run 7, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:28,264 - --- Running Random Forest - Run 8 ---
+2025-04-14 19:50:28,876 - 
+            Model: Random Forest (Run 8, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 4, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:28,876 - --- Running Random Forest - Run 9 ---
+2025-04-14 19:50:29,523 - 
+            Model: Random Forest (Run 9, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:29,523 - --- Running Random Forest - Run 10 ---
+2025-04-14 19:50:30,156 - 
+            Model: Random Forest (Run 10, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 0, TN: 5, FP: 0, FN: 3
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.6250
+            - Precision: 0.0000
+            - Recall: 0.0000
+            - F1 Score: 0.0000
+            ---------------------------------
+            
+2025-04-14 19:50:30,158 - 
+    --- Random Forest - Average Metrics over 10 runs (Sample Proportion: 0.50) ---
+    ----------------------------------------------------------------------------------------------------
+    Average Confusion Matrix:
+    - TP: 3.20, TN: 3.80, FP: 0.20, FN: 0.80
+
+    Average Statistical Metrics:
+    - Accuracy: 0.8750
+    - Precision: 0.8583
+    - Recall: 0.7750
+    - F1 Score: 0.8088
+    ----------------------------------------------------------------------------------------------------
+    
+2025-04-14 19:50:30,159 - --- Running Support Vector Machine - Run 1 ---
+2025-04-14 19:50:30,179 - 
+            Model: Support Vector Machine (Run 1, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 3, FP: 1, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 0.8000
+            - Recall: 1.0000
+            - F1 Score: 0.8889
+            ---------------------------------
+            
+2025-04-14 19:50:30,180 - --- Running Support Vector Machine - Run 2 ---
+2025-04-14 19:50:30,190 - 
+            Model: Support Vector Machine (Run 2, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 4, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:30,190 - --- Running Support Vector Machine - Run 3 ---
+2025-04-14 19:50:30,199 - 
+            Model: Support Vector Machine (Run 3, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:30,200 - --- Running Support Vector Machine - Run 4 ---
+2025-04-14 19:50:30,209 - 
+            Model: Support Vector Machine (Run 4, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 3, FP: 1, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 0.8000
+            - Recall: 1.0000
+            - F1 Score: 0.8889
+            ---------------------------------
+            
+2025-04-14 19:50:30,210 - --- Running Support Vector Machine - Run 5 ---
+2025-04-14 19:50:30,219 - 
+            Model: Support Vector Machine (Run 5, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:30,220 - --- Running Support Vector Machine - Run 6 ---
+2025-04-14 19:50:30,228 - 
+            Model: Support Vector Machine (Run 6, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 5, TN: 3, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:30,229 - --- Running Support Vector Machine - Run 7 ---
+2025-04-14 19:50:30,240 - 
+            Model: Support Vector Machine (Run 7, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:30,240 - --- Running Support Vector Machine - Run 8 ---
+2025-04-14 19:50:30,249 - 
+            Model: Support Vector Machine (Run 8, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 4, TN: 4, FP: 0, FN: 0
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 1.0000
+            - Precision: 1.0000
+            - Recall: 1.0000
+            - F1 Score: 1.0000
+            ---------------------------------
+            
+2025-04-14 19:50:30,249 - --- Running Support Vector Machine - Run 9 ---
+2025-04-14 19:50:30,258 - 
+            Model: Support Vector Machine (Run 9, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 3, TN: 4, FP: 0, FN: 1
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.8750
+            - Precision: 1.0000
+            - Recall: 0.7500
+            - F1 Score: 0.8571
+            ---------------------------------
+            
+2025-04-14 19:50:30,259 - --- Running Support Vector Machine - Run 10 ---
+2025-04-14 19:50:30,269 - 
+            Model: Support Vector Machine (Run 10, Threshold: 0.5)
+            ---------------------------------
+            Confusion Matrix:
+            - TP: 1, TN: 5, FP: 0, FN: 2
+
+            Statistical Metrics (based on sampled test set):
+            - Accuracy: 0.7500
+            - Precision: 1.0000
+            - Recall: 0.3333
+            - F1 Score: 0.5000
+            ---------------------------------
+            
+2025-04-14 19:50:30,270 - 
+    --- Support Vector Machine - Average Metrics over 10 runs (Sample Proportion: 0.50) ---
+    ----------------------------------------------------------------------------------------------------
+    Average Confusion Matrix:
+    - TP: 3.40, TN: 3.80, FP: 0.20, FN: 0.60
+
+    Average Statistical Metrics:
+    - Accuracy: 0.9000
+    - Precision: 0.9600
+    - Recall: 0.8333
+    - F1 Score: 0.8706
+    ----------------------------------------------------------------------------------------------------
+    
